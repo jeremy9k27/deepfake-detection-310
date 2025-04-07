@@ -1,0 +1,18 @@
+Built on top of benfordapp
+
+Add final_proj_main.py on top of project04-client to upload .mp3 to s3
+
+Upload lambda functions from the .zip files, change config files to your credentials.
+
+API Gateway - add /mp3/{userid} POST that calls final_proj_upload Lambda function
+
+final_proj_transcribe - add trigger, when .mp3 file is created in s3
+
+s3readwrite - attach AmazonTranscribeFullAccess, ComrehendFullAccess, AWSLambdaFullAccess
+
+final_proj_transcribe-role - attach AmazonTranscribeFullAccess, AWSLambda_FullAccess
+
+final_proj_analyze-role - attach ComprehendFullAccess, AWSLambda_FullAccess
+
+
+
